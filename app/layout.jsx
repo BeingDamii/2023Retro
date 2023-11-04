@@ -3,7 +3,6 @@ import "./globals.css";
 
 const dm_mono = DM_Mono({
   weight: ["300", "400", "500"],
-
   subsets: ["latin"],
 });
 

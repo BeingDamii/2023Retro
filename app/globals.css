@@ -2,4 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #f0f0f0;
+}
 
+.page-wrapper {
+  @apply px-16 flex
+   flex-col
+    max-h-screen
+    pt-5
+    pb-20;
+}
+
+.top-section-wrapper {
+  @apply flex 
+      flex-col
+      align-top;
+}
+
+.large-heading {
+  display: block;
+  font-size: 225px;
+  @apply font-extrabold
+  whitespace-nowrap
+  -mt-20;
+}
+
+.items-wrapper {
+  @apply flex
+  justify-between
+  -my-14;
+}
+
+.small-heading {
+  font-size: 20px;
+}
+
+.buttons-wrapper {
+  @apply flex
+    gap-10;
+}
+
+.button {
+  @apply border
+    border-black
+    px-3
+    py-2
+    rounded-full
+    font-medium;
+}
