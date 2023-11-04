@@ -4,6 +4,7 @@
 
 body {
   background-color: #f0f0f0;
+  background-color: #fdf8cf;
 }
 
 .page-wrapper {
@@ -23,6 +24,7 @@ body {
 .large-heading {
   display: block;
   font-size: 225px;
+  letter-spacing: -8%;
   @apply font-extrabold
   whitespace-nowrap
   -mt-20;
@@ -36,11 +38,12 @@ body {
 
 .small-heading {
   font-size: 20px;
+  @apply self-center;
 }
 
 .buttons-wrapper {
   @apply flex
-    gap-10;
+    gap-5;
 }
 
 .button {
@@ -49,21 +52,46 @@ body {
     px-3
     py-2
     rounded-full
-    overflow-hidden
-    relative
-    font-medium
-    transition
-    ease-in-out
-    delay-100;
+    text-sm
+    font-medium;
 }
 
 .switch-theme-btn {
   @apply flex
         gap-3
         align-middle
-        cursor-pointer
+        cursor-pointer;
 }
 .switch-theme-btn h2 {
   @apply flex
         -mt-0.5;
+}
+
+.cards-container {
+  @apply grid 
+      grid-cols-4
+      gap-3
+      mt-24;
+}
+
+.card {
+  border-color: #a8a8a8;
+  height: 250px;
+  @apply border 
+      py-10
+      px-5
+      flex
+      flex-col
+      gap-5
+      rounded-xl;
+}
+
+.card-excerpt {
+  color: #313131;
+  @apply font-medium
+  text-sm;
+}
+
+.card-name {
+  @apply font-bold;
 }
