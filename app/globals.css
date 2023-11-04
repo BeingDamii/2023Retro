@@ -49,5 +49,21 @@ body {
     px-3
     py-2
     rounded-full
-    font-medium;
+    overflow-hidden
+    relative
+    font-medium
+    transition
+    ease-in-out
+    delay-100;
+}
+
+.switch-theme-btn {
+  @apply flex
+        gap-3
+        align-middle
+        cursor-pointer
+}
+.switch-theme-btn h2 {
+  @apply flex
+        -mt-0.5;
 }

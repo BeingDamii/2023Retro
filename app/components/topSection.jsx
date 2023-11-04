@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NormalButton, SwitchTheme } from "./buttons";
 
 const TopSection = () => {
   return (
@@ -7,15 +8,9 @@ const TopSection = () => {
       <div className="items-wrapper">
         <h3 className="small-heading">Tell your 2023 story</h3>
         <div className="buttons-wrapper">
-          <Link className="button" href="/add-story">
-            Tell your story
-          </Link>
-          <Link className="button" href="/add-story">
-            Twitter
-          </Link>
-          <Link className="button" href="/add-story">
-            Dark mode
-          </Link>
+          <NormalButton text="Tell your story" link="/tell-story" />
+          <NormalButton text="Twitter" link="https://twitter.com/hydedenz" />
+          <SwitchTheme text="Dark mode"/>
         </div>
       </div>
     </div>
