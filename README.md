@@ -1,6 +1,6 @@
-# 2023 Stories Sharing Project
+# 2023Retro
 
-Welcome to the 2023 Stories Sharing Project! 🎉 This open-source project allows people to share their stories and experiences from the year 2023. Built with Next.js, Tailwind CSS, and JavaScript, this project provides a platform for users to connect and share their unique tales.
+This open-source project allows people to share their stories and experiences from the year 2023. Built with Next.js, Tailwind CSS, and JavaScript, this project provides a platform for users to connect and share their unique tales.
 
 ## Technologies Used
 
