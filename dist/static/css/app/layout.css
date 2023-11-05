@@ -551,6 +551,9 @@ video {
 .mt-5 {
   margin-top: 1.25rem;
 }
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .self-center {
   align-self: center;
 }
@@ -658,7 +661,6 @@ body {
   font-weight: 700;
 }
 
-
 /* add submission page */
 
 .add-submission-title {
@@ -668,3 +670,55 @@ body {
   line-height: 2.5rem;
   font-weight: 700;
 }
+
+.submission-form-wrapper {
+  height: 450px;
+  margin-top: 2.5rem;
+  width: 50%;
+  align-self: center;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding: 1.25rem;
+}
+.submission-textarea {
+  height: 20rem;
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.submission-textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-primary {
+  font-size: 20px;
+  margin-top: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.close-btn {
+  font-size: 20px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-self: center;
+  vertical-align: middle;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+

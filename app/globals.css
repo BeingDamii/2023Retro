@@ -88,19 +88,58 @@ body {
 .card-excerpt {
   color: #313131;
   @apply font-medium
-  text-sm;
+      text-sm;
 }
 
 .card-name {
   @apply font-bold;
 }
 
-
 /* add submission page */
 
-.add-submission-title{
+.add-submission-title {
   @apply self-center
       mt-10
       text-4xl
-      font-bold
+      font-bold;
+}
+
+.submission-form-wrapper {
+  height: 450px;
+  @apply mt-10 
+     self-center border
+     w-1/2
+     p-5
+     rounded-3xl
+     border-black;
+}
+.submission-textarea {
+  @apply w-full 
+      h-80
+      p-4
+      bg-transparent
+      focus:outline-none
+      text-lg
+      resize-none;
+}
+
+.button-primary {
+  font-size: 20px;
+  @apply bg-black
+     text-white
+     mt-2
+     px-5
+     py-3;
+}
+
+.close-btn {
+  font-size: 20px;
+  @apply flex
+    gap-4
+    self-center
+    mt-4
+    justify-center
+    align-middle
+    font-bold
+    text-lg;
 }
