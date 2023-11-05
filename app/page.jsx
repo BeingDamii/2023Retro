@@ -24,6 +24,7 @@ export default async function Home() {
           );
         })}
       </div>
+      <h1 className="self-center mt-5">loading more....</h1>
     </div>
   );
 }

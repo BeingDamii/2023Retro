@@ -8,7 +8,7 @@ const TopSection = () => {
       <div className="items-wrapper">
         <h3 className="small-heading">Tell your 2023 story</h3>
         <div className="buttons-wrapper">
-          <NormalButton text="Tell your story" link="/tell-story" />
+          <NormalButton text="Tell your story" link="/add-submission" />
           <NormalButton text="Twitter" link="https://twitter.com/hydedenz" />
           <SwitchTheme text="Dark mode"/>
         </div>
