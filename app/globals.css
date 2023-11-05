@@ -94,3 +94,13 @@ body {
 .card-name {
   @apply font-bold;
 }
+
+
+/* add submission page */
+
+.add-submission-title{
+  @apply self-center
+      mt-10
+      text-4xl
+      font-bold
+}
