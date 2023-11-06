@@ -113,6 +113,16 @@ body {
      rounded-3xl
      border-black;
 }
+.submission-form-container {
+  @apply flex
+      justify-between;
+}
+.other-form {
+  @apply self-center
+       flex
+       flex-col
+       justify-start;
+}
 .submission-textarea {
   @apply w-full 
       h-80
@@ -122,14 +132,42 @@ body {
       text-lg
       resize-none;
 }
+.checkbox-container {
+  gap: 5px;
+  @apply flex
+      align-middle
+      mt-1;
+}
+.checkbox {
+  @apply accent-black
+      text-white
+      checked:bg-black
+      checked:text-white;
+}
+.username-input {
+  @apply p-2
+      border-b
+      border-black
+      bg-transparent
+      active:outline-none
+      focus:outline-none
+      pl-0
+      active:border-none;
+}
+
 
 .button-primary {
   font-size: 20px;
-  @apply bg-black
-     text-white
-     mt-2
-     px-5
-     py-3;
+  @apply 
+  px-6
+  py-3
+  h-fit
+  self-center
+  bg-black
+  text-white
+  rounded-full
+  text-sm
+  font-medium;
 }
 
 .close-btn {
