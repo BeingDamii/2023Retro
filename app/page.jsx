@@ -1,8 +1,13 @@
+import next from "next";
 import PostCard from "./components/postCard";
 import TopSection from "./components/topSection";
 
 async function fetchSubmissions() {
-  const response = await fetch("http://localhost:3000/api/posts");
+  const response = await fetch("http://localhost:3000/api/posts", {
+    next: {
+      revalidate: true,
+    },
+  });
   const posts = response.json();
   return posts;
 }
