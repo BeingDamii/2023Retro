@@ -1,0 +1,24 @@
+.boxProp{
+    border-color: #A8A8A8;
+    border-radius: 20px;
+   
+}
+
+.slider{    
+    animation: scroll 40s linear infinite;
+    
+}
+
+.slider:hover{
+    animation-play-state: paused; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}

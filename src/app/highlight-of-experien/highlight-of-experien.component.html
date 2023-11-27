@@ -1,0 +1,15 @@
+<div class="w-11/12 mx-auto mt-20 overflow-hidden flex">
+    <div class="flex justify-center items-center gap-4 slider text-xs ">        
+       
+        <div class="rounded-xl border p-4 md:h-52 h-36 w-48 md:w-72 boxProp cursor-pointer"  *ngFor="let posts of post" [routerLink]="['/single', posts.id]">
+            <p class="md:h-36 h-20 overflow-hidden w-full ">{{posts.data.experience}}</p>
+            <p class="mt-6 w-full text-right">{{posts.data.name}}</p>
+        </div>
+        
+        
+ 
+        
+        
+
+    </div>   
+</div>

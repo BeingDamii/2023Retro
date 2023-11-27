@@ -1,0 +1,52 @@
+<div class="wrapper flex flex-col justify-center items-center md:mt-20 mt-8 ">
+
+    <div class=" w-full  md:text-2xl font-bold text-left md:text-center">
+        <p class="ml-8 md:ml-0">Tell your 2023 Story</p>     
+    </div>
+
+    <div class="text-xs md:text-base border boxProp mt-4 md:mt-8 overflow-hidden">
+
+    <form class="md:p-12 p-2" #form="ngForm" (submit)="onSubmit(form)">    
+    <textarea  
+        cols="50" rows="30"
+        class=" mt-4 md:mt-0  bg-transparent w-full outline-none overflow-hidden h-56 md:h-80" 
+        placeholder="say something... "
+        ngModel
+        name="experience">
+    </textarea>
+
+        <div class="w-full justify-between items-center flex">
+            <button class="bg-black text-gray-200 p-2 px-6 rounded-2xl" [disabled]="form.invalid">Sayit </button>
+
+            <div class=" ">
+            <input   
+            type="text"
+            class=" text-left md:text-sm text-xs bg-transparent outline-none" 
+            placeholder="@ yourname"
+            name="name"
+            ngModel
+            >
+            <div class="md:w-52 w-32 borderProp mb-1 "></div>          
+            <input 
+            type="checkbox" 
+            required
+            name="check"
+            ngModel>
+            <span class="md:text-sm text-xs text-center ml-1">This is my X username</span>
+            </div>
+        </div>
+        
+    </form>
+    </div> 
+
+    <div class="w-full mt-4 text-xs md:text-base md:text-center">
+    <button class=" ml-8 md:ml-0" routerLink="single">Close x</button>
+    </div>
+
+</div>
+
+
+
+
+
+<app-highlight-of-experien></app-highlight-of-experien>
